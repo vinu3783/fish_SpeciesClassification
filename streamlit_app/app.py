@@ -58,6 +58,24 @@ st.markdown("""
     
     .stApp {
         background: linear-gradient(135deg, #0F0F23 0%, #1A1A2E 50%, #16213E 100%);
+        color: var(--text-primary);
+    }
+    
+    /* Streamlit Component Overrides */
+    .stMarkdown, .stMarkdown p, .stMarkdown div {
+        color: var(--text-primary) !important;
+    }
+    
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5, .stMarkdown h6 {
+        color: var(--text-primary) !important;
+    }
+    
+    .stSelectbox label, .stSlider label, .stFileUploader label {
+        color: var(--text-primary) !important;
+    }
+    
+    .stExpander .streamlit-expanderHeader {
+        color: var(--text-primary) !important;
     }
     
     /* Header Styles */
@@ -97,6 +115,7 @@ st.markdown("""
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
         overflow: hidden;
+        color: var(--text-primary);
     }
     
     .glass-card:hover {
@@ -113,6 +132,14 @@ st.markdown("""
         right: 0;
         height: 1px;
         background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    }
+    
+    .glass-card h1, .glass-card h2, .glass-card h3, .glass-card h4 {
+        color: var(--text-primary) !important;
+    }
+    
+    .glass-card p, .glass-card ul, .glass-card li {
+        color: var(--text-primary) !important;
     }
     
     /* Prediction Results */
@@ -336,10 +363,19 @@ st.markdown("""
         background: var(--glass-bg);
         border: 1px solid var(--glass-border);
         border-radius: 12px;
+        color: var(--text-primary) !important;
     }
     
     .stSidebar .stSlider > div > div > div {
         background: var(--accent-blue);
+    }
+    
+    .stSidebar .stMarkdown, .stSidebar .stMarkdown p, .stSidebar .stMarkdown div {
+        color: var(--text-primary) !important;
+    }
+    
+    .stSidebar .stMarkdown h1, .stSidebar .stMarkdown h2, .stSidebar .stMarkdown h3 {
+        color: var(--text-primary) !important;
     }
     
     /* Info Cards */
@@ -352,11 +388,25 @@ st.markdown("""
         margin: 1rem 0;
         border-left: 4px solid var(--accent-blue);
         transition: all 0.3s ease;
+        color: var(--text-primary);
     }
     
     .info-card:hover {
         border-left-color: var(--accent-purple);
         transform: translateX(4px);
+    }
+    
+    .info-card p, .info-card ul, .info-card li {
+        color: var(--text-primary) !important;
+    }
+    
+    .info-card h3, .info-card h4 {
+        color: var(--text-primary) !important;
+        margin-bottom: 1rem;
+    }
+    
+    .info-card strong {
+        color: var(--accent-blue);
     }
     
     /* Animations */
@@ -483,6 +533,42 @@ st.markdown("""
         backdrop-filter: blur(16px);
         border-radius: 16px;
         border: 1px solid var(--glass-border);
+    }
+    
+    .stDataFrame table {
+        color: var(--text-primary) !important;
+    }
+    
+    .stDataFrame th {
+        background-color: var(--secondary-bg) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--glass-border) !important;
+    }
+    
+    .stDataFrame td {
+        background-color: var(--glass-bg) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--glass-border) !important;
+    }
+    
+    /* File Uploader */
+    .stFileUploader > div > div {
+        background: var(--glass-bg);
+        border: 2px dashed var(--glass-border);
+        border-radius: 16px;
+        color: var(--text-primary) !important;
+    }
+    
+    /* Expander */
+    .stExpander {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: 12px;
+    }
+    
+    .stExpander .streamlit-expanderContent {
+        background: var(--glass-bg);
+        color: var(--text-primary) !important;
     }
 </style>
 """, unsafe_allow_html=True)
