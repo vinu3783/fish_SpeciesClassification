@@ -1,9 +1,5 @@
-# fish_SpeciesClassification
 🐟 Fish Species Classification Project
 An end-to-end deep learning project for classifying fish species from images using CNN and Transfer Learning techniques. Built with TensorFlow/Keras and deployed as a Streamlit web application.
-
-Fish Classification Demo Python TensorFlow
-
 🎯 Project Overview
 This project implements a complete machine learning pipeline for fish species classification:
 
@@ -50,7 +46,7 @@ data/
     ├── species1/
     ├── species2/
     └── ...
-Place images in JPG/PNG format in respective species folders
+    Place images in JPG/PNG format in respective species folders
 Training Models
 Run the complete training pipeline:
 
@@ -99,13 +95,6 @@ The project implements and compares multiple deep learning architectures:
 Architecture: 3 Conv2D blocks + Global Average Pooling + Dense layers
 Parameters: ~1.2M parameters
 Use Case: Baseline comparison and custom feature learning
-2. Transfer Learning Models
-Model	Parameters	Input Size	Strengths
-VGG16	14.7M	224×224	Simple, reliable
-ResNet50	23.6M	224×224	Deep networks, skip connections
-MobileNet	3.2M	224×224	Lightweight, mobile-friendly
-InceptionV3	21.8M	299×299	Multi-scale feature extraction
-EfficientNetB0	4.0M	224×224	Optimal accuracy/efficiency balance
 📊 Performance Metrics
 The project evaluates models using:
 
@@ -185,5 +174,5 @@ Pre-trained models from TensorFlow Hub
 Fish datasets from various marine biology sources
 📞 Contact
 GitHub:https://github.com/vinu3783
-Email: vinayakagc210@gmail.com
-LinkedIn: linkedin.com/in/vinayaka-gc-54817a259
+Email:vinayakagc210@gmail.com
+LinkedIn: Your linkedin.com/in/vinayaka-gc-54817a259
