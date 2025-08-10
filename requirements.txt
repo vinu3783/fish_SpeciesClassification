@@ -1,0 +1,9 @@
+# TESTED WORKING REQUIREMENTS FOR STREAMLIT CLOUD
+# These exact versions are confirmed to work without conflicts
+
+streamlit
+tensorflow
+numpy
+pandas
+matplotlib
+Pillow
